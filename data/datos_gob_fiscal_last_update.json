@@ -1,0 +1,138 @@
+{
+  "pipeline": "datos_gob_fiscal",
+  "ultima_actualizacion": "2026-04-19T23:36:39.344311+00:00",
+  "total_filas": 122,
+  "total_columnas": 21,
+  "fecha_inicio": "2016-01-01",
+  "fecha_fin": "2026-02-01",
+  "fuente": "API Series de Tiempo - datos.gob.ar",
+  "series_config": [
+    {
+      "id": "452.3_RESULTADO_RIO_0_M_18_54",
+      "columna": "fiscal_res_primario",
+      "descripcion": "Resultado primario del SPN",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.3_RESULTADO_PIP_0_M_22_71",
+      "columna": "fiscal_res_primario_pip",
+      "descripcion": "Resultado primario con P.I.P. (Meta FMI)",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.3_RESULTADO_ERO_0_M_20_25",
+      "columna": "fiscal_res_financiero",
+      "descripcion": "Resultado financiero del SPN",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.3_INTERESES_TOS_0_M_15_62",
+      "columna": "fiscal_intereses_netos",
+      "descripcion": "Intereses netos de la deuda pública",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_GANANCIASIAS_0_T_9_51",
+      "columna": "fiscal_ing_ganancias",
+      "descripcion": "Impuesto a las Ganancias",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_IVA_NETO_RROS_0_T_19_67",
+      "columna": "fiscal_ing_iva_neto",
+      "descripcion": "IVA neto de reintegros",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_APORTES_COIAL_0_T_39_29",
+      "columna": "fiscal_ing_aportes_ss",
+      "descripcion": "Aportes y contribuciones a la seguridad social",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_DERECHOS_EION_0_T_20_42",
+      "columna": "fiscal_ing_retenciones",
+      "descripcion": "Derechos de exportación (retenciones)",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_DERECHOS_IION_0_T_20_60",
+      "columna": "fiscal_ing_der_import",
+      "descripcion": "Derechos de importación",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_DEBITOS_CRTOS_0_T_16_22",
+      "columna": "fiscal_ing_deb_cred",
+      "descripcion": "Débitos y créditos (impuesto al cheque)",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_BIENES_PERLES_0_T_17_26",
+      "columna": "fiscal_ing_bp",
+      "descripcion": "Bienes personales",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_INGRESOS_NIOS_0_T_23_2",
+      "columna": "fiscal_ing_no_trib",
+      "descripcion": "Ingresos no tributarios",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_INGRESOS_CTAL_0_T_16_75",
+      "columna": "fiscal_ing_capital",
+      "descripcion": "Ingresos de capital",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_JUBILACIONVAS_0_T_36_18",
+      "columna": "fiscal_gto_jubilaciones",
+      "descripcion": "Jubilaciones y pensiones contributivas",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_ASIGNACIONIJO_0_T_26_67",
+      "columna": "fiscal_gto_asig_fam",
+      "descripcion": "Asignaciones familiares y AUH",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_PENSIONES_VAS_0_T_26_164",
+      "columna": "fiscal_gto_pens_nc",
+      "descripcion": "Pensiones no contributivas",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_PRESTACIONSJP_0_T_19_86",
+      "columna": "fiscal_gto_pami",
+      "descripcion": "Prestaciones INSSJP (PAMI)",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_ENERGIAGIA_0_T_7_56",
+      "columna": "fiscal_gto_subs_energia",
+      "descripcion": "Subsidios económicos - energía",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_TRANSPORTERTE_0_T_10_32",
+      "columna": "fiscal_gto_subs_transp",
+      "descripcion": "Subsidios económicos - transporte",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_SALARIOSIOS_0_T_8_22",
+      "columna": "fiscal_gto_salarios",
+      "descripcion": "Salarios del Sector Público Nacional",
+      "unidad": "millones $"
+    },
+    {
+      "id": "452.2_OTROS_GASTNTO_0_T_27_55",
+      "columna": "fiscal_gto_otros_func",
+      "descripcion": "Otros gastos de funcionamiento",
+      "unidad": "millones $"
+    }
+  ],
+  "errores": []
+}

@@ -1,0 +1,42 @@
+name: Pipeline datos.gob.ar (mensual)
+
+on:
+  schedule:
+    # Corre el día 22 de cada mes a las 14:00 UTC = 11:00 ARG.
+    # El IMIG (Min. Economía) se publica típicamente entre el 20 y el 25.
+    # Si sale antes, correr manualmente desde la pestaña Actions.
+    - cron: '0 14 22 * *'
+  workflow_dispatch:   # permite correrlo manualmente en cualquier momento
+
+jobs:
+  actualizar-datos:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar pipeline datos.gob.ar (fiscal)
+        run: python scripts/datos_gob_pipeline.py
+
+      - name: Commitear y pushear CSV actualizado
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/datos_gob_fiscal_hechos.csv \
+                  data/datos_gob_fiscal_last_update.json
+          # Solo hace commit si hubo cambios
+          git diff --cached --quiet || git commit -m "datos.gob.ar: actualizacion automatica $(date -u +%Y-%m)"
+          git push
