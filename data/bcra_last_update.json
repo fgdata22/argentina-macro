@@ -1,413 +1,49 @@
 {
-  "pipeline_ejecutado_utc": "2026-04-19T14:58:26Z",
-  "variables": [
-    {
-      "id_variable": 74,
-      "nombre": "Reservas - saldo total",
-      "categoria": "RESERVAS",
-      "unidad": "millones USD",
-      "ultima_fecha_disponible": "2026-04-14",
-      "total_filas": 5707
-    },
-    {
-      "id_variable": 75,
-      "nombre": "Reservas - oro, divisas y colocaciones",
-      "categoria": "RESERVAS",
-      "unidad": "millones USD",
-      "ultima_fecha_disponible": "2026-04-14",
-      "total_filas": 5707
-    },
-    {
-      "id_variable": 76,
-      "nombre": "Reservas - pase pasivo USD exterior",
-      "categoria": "RESERVAS",
-      "unidad": "millones USD",
-      "ultima_fecha_disponible": "2026-04-14",
-      "total_filas": 5707
-    },
-    {
-      "id_variable": 77,
-      "nombre": "Reservas - variacion diaria total",
-      "categoria": "RESERVAS",
-      "unidad": "millones USD",
-      "ultima_fecha_disponible": "2026-01-01",
-      "total_filas": 6011
-    },
-    {
-      "id_variable": 78,
-      "nombre": "Reservas - variacion compra divisas",
-      "categoria": "RESERVAS",
-      "unidad": "millones USD",
-      "ultima_fecha_disponible": "2026-01-01",
-      "total_filas": 6011
-    },
-    {
-      "id_variable": 79,
-      "nombre": "Reservas - variacion organismos internac",
-      "categoria": "RESERVAS",
-      "unidad": "millones USD",
-      "ultima_fecha_disponible": "2026-01-01",
-      "total_filas": 6011
-    },
-    {
-      "id_variable": 80,
-      "nombre": "Reservas - variacion otras op sector pub",
-      "categoria": "RESERVAS",
-      "unidad": "millones USD",
-      "ultima_fecha_disponible": "2026-01-01",
-      "total_filas": 6011
-    },
-    {
-      "id_variable": 81,
-      "nombre": "Reservas - variacion efectivo minimo",
-      "categoria": "RESERVAS",
-      "unidad": "millones USD",
-      "ultima_fecha_disponible": "2026-01-01",
-      "total_filas": 6011
-    },
-    {
-      "id_variable": 82,
-      "nombre": "Reservas - variacion otros",
-      "categoria": "RESERVAS",
-      "unidad": "millones USD",
-      "ultima_fecha_disponible": "2026-01-01",
-      "total_filas": 6011
-    },
-    {
-      "id_variable": 83,
-      "nombre": "DEGs 2009 - saldo asignaciones",
-      "categoria": "RESERVAS",
-      "unidad": "millones USD",
-      "ultima_fecha_disponible": "2026-04-14",
-      "total_filas": 5707
-    },
-    {
-      "id_variable": 84,
-      "nombre": "Tipo de cambio BCRA (pesos por USD)",
-      "categoria": "RESERVAS",
-      "unidad": "pesos/USD",
-      "ultima_fecha_disponible": "2026-04-14",
-      "total_filas": 5707
-    },
-    {
-      "id_variable": 46,
-      "nombre": "BM - factores explicacion variacion",
-      "categoria": "BASE MONETARIA",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-01-01",
-      "total_filas": 6011
-    },
-    {
-      "id_variable": 49,
-      "nombre": "BM - adelantos transitorios al Tesoro",
-      "categoria": "BASE MONETARIA",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-01-01",
-      "total_filas": 6011
-    },
-    {
-      "id_variable": 50,
-      "nombre": "BM - transferencia utilidades al Tesoro",
-      "categoria": "BASE MONETARIA",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-01-01",
-      "total_filas": 6011
-    },
-    {
-      "id_variable": 64,
-      "nombre": "BM - variacion diaria base monetaria",
-      "categoria": "BASE MONETARIA",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-01-01",
-      "total_filas": 6011
-    },
-    {
-      "id_variable": 67,
-      "nombre": "BM - saldo billetes y monedas publico",
-      "categoria": "BASE MONETARIA",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-04-01",
-      "total_filas": 5987
-    },
-    {
-      "id_variable": 68,
-      "nombre": "BM - saldo billetes y monedas entidades",
-      "categoria": "BASE MONETARIA",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-04-01",
-      "total_filas": 5987
-    },
-    {
-      "id_variable": 70,
-      "nombre": "BM - saldo cuentas corrientes en BCRA",
-      "categoria": "BASE MONETARIA",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-04-01",
-      "total_filas": 5987
-    },
-    {
-      "id_variable": 71,
-      "nombre": "BM - saldo base monetaria",
-      "categoria": "BASE MONETARIA",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-04-01",
-      "total_filas": 5987
-    },
-    {
-      "id_variable": 73,
-      "nombre": "BM - saldo base mas cuasimonedas",
-      "categoria": "BASE MONETARIA",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-04-01",
-      "total_filas": 5987
-    },
-    {
-      "id_variable": 109,
-      "nombre": "M2 - agregado monetario amplio",
-      "categoria": "BASE MONETARIA",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 197,
-      "nombre": "M2 - transaccional privado",
-      "categoria": "BASE MONETARIA",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 1521
-    },
-    {
-      "id_variable": 94,
-      "nombre": "Depositos - CC sector privado",
-      "categoria": "DEPOSITOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 95,
-      "nombre": "Depositos - CA sector privado",
-      "categoria": "DEPOSITOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 96,
-      "nombre": "Depositos - PF no ajustable priv",
-      "categoria": "DEPOSITOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 97,
-      "nombre": "Depositos - PF ajustable CER/UVA priv",
-      "categoria": "DEPOSITOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6522
-    },
-    {
-      "id_variable": 102,
-      "nombre": "Depositos - total pesos sector privado",
-      "categoria": "DEPOSITOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 104,
-      "nombre": "Depositos - USD privado en pesos",
-      "categoria": "DEPOSITOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 106,
-      "nombre": "Depositos - total pesos y USD priv en $",
-      "categoria": "DEPOSITOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 108,
-      "nombre": "Depositos - USD sector privado en USD",
-      "categoria": "DEPOSITOS",
-      "unidad": "millones USD",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 110,
-      "nombre": "Prestamos - adelantos CC pesos",
-      "categoria": "PRESTAMOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 111,
-      "nombre": "Prestamos - documentos pesos",
-      "categoria": "PRESTAMOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 112,
-      "nombre": "Prestamos - hipotecarios pesos",
-      "categoria": "PRESTAMOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 113,
-      "nombre": "Prestamos - prendarios pesos",
-      "categoria": "PRESTAMOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 114,
-      "nombre": "Prestamos - personales pesos",
-      "categoria": "PRESTAMOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 115,
-      "nombre": "Prestamos - tarjetas credito pesos",
-      "categoria": "PRESTAMOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 116,
-      "nombre": "Prestamos - otros pesos",
-      "categoria": "PRESTAMOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 117,
-      "nombre": "Prestamos - total pesos",
-      "categoria": "PRESTAMOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 125,
-      "nombre": "Prestamos - total USD en USD",
-      "categoria": "PRESTAMOS",
-      "unidad": "millones USD",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 127,
-      "nombre": "Prestamos - total pesos y USD en pesos",
-      "categoria": "PRESTAMOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-03-01",
-      "total_filas": 6544
-    },
-    {
-      "id_variable": 1189,
-      "nombre": "PF - tasa total general TNA",
-      "categoria": "TASAS",
-      "unidad": "%",
-      "ultima_fecha_disponible": "2026-04-16",
-      "total_filas": 5708
-    },
-    {
-      "id_variable": 1190,
-      "nombre": "PF - tasa personas humanas TNA",
-      "categoria": "TASAS",
-      "unidad": "%",
-      "ultima_fecha_disponible": "2026-04-16",
-      "total_filas": 3963
-    },
-    {
-      "id_variable": 138,
-      "nombre": "BADLAR - total bancos TNA",
-      "categoria": "TASAS",
-      "unidad": "%",
-      "ultima_fecha_disponible": "2026-04-16",
-      "total_filas": 5708
-    },
-    {
-      "id_variable": 139,
-      "nombre": "BADLAR - bancos privados TNA",
-      "categoria": "TASAS",
-      "unidad": "%",
-      "ultima_fecha_disponible": "2026-04-16",
-      "total_filas": 5708
-    },
-    {
-      "id_variable": 144,
-      "nombre": "Tasa prestamos personales TNA",
-      "categoria": "TASAS",
-      "unidad": "%",
-      "ultima_fecha_disponible": "2026-04-16",
-      "total_filas": 3841
-    },
-    {
-      "id_variable": 145,
-      "nombre": "Tasa adelantos empresas TNA",
-      "categoria": "TASAS",
-      "unidad": "%",
-      "ultima_fecha_disponible": "2026-04-16",
-      "total_filas": 4209
-    },
-    {
-      "id_variable": 160,
-      "nombre": "Tasa politica monetaria TNA",
-      "categoria": "TASAS",
-      "unidad": "%",
-      "ultima_fecha_disponible": "2025-07-10",
-      "total_filas": 2329
-    },
-    {
-      "id_variable": 161,
-      "nombre": "Tasa politica monetaria TEA",
-      "categoria": "TASAS",
-      "unidad": "%",
-      "ultima_fecha_disponible": "2025-07-10",
-      "total_filas": 1325
-    },
-    {
-      "id_variable": 152,
-      "nombre": "Pases pasivos - saldo total",
-      "categoria": "INSTRUMENTOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-04-16",
-      "total_filas": 5358
-    },
-    {
-      "id_variable": 155,
-      "nombre": "LELIQ y NOTALIQ - saldo",
-      "categoria": "INSTRUMENTOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-04-16",
-      "total_filas": 2002
-    },
-    {
-      "id_variable": 196,
-      "nombre": "LEFI - cartera entidades",
-      "categoria": "INSTRUMENTOS",
-      "unidad": "millones $",
-      "ultima_fecha_disponible": "2026-04-16",
-      "total_filas": 5708
-    }
-  ]
+  "pipeline_ejecutado_utc": "2026-04-19T15:08:24Z",
+  "total_fechas": 5829,
+  "primera_fecha": "2002-12-31",
+  "ultima_fecha_global": "2026-04-16",
+  "ultima_fecha_por_columna": {
+    "res_total": "2026-04-14",
+    "res_oro_divisas": "2026-04-14",
+    "res_pase_pasivo": "2026-04-14",
+    "res_degs": "2026-04-14",
+    "tc_bcra": "2026-04-14",
+    "bm_billetes_publico": "2026-04-14",
+    "bm_billetes_entidades": "2026-04-14",
+    "bm_cta_cte_bcra": "2026-04-14",
+    "bm_saldo": "2026-04-14",
+    "bm_mas_cuasimonedas": "2026-04-14",
+    "m2": "2026-04-14",
+    "m2_transaccional_priv": "2026-04-14",
+    "dep_cc_priv": "2026-04-14",
+    "dep_ca_priv": "2026-04-14",
+    "dep_pf_no_ajust_priv": "2026-04-14",
+    "dep_pf_ajust_cer_priv": "2026-04-14",
+    "dep_total_pesos_priv": "2026-04-14",
+    "dep_usd_priv_enpesos": "2026-04-14",
+    "dep_total_priv_enpesos": "2026-04-14",
+    "dep_usd_priv": "2026-04-14",
+    "prest_adelantos": "2026-04-14",
+    "prest_documentos": "2026-04-14",
+    "prest_hipotecarios": "2026-04-14",
+    "prest_prendarios": "2026-04-14",
+    "prest_personales": "2026-04-14",
+    "prest_tarjetas": "2026-04-14",
+    "prest_otros": "2026-04-14",
+    "prest_total_pesos": "2026-04-14",
+    "prest_total_usd": "2026-04-14",
+    "prest_total_enpesos": "2026-04-14",
+    "tasa_pf_total_tna": "2026-04-16",
+    "tasa_pf_personas_tna": "2026-04-16",
+    "badlar_total_tna": "2026-04-16",
+    "badlar_privados_tna": "2026-04-16",
+    "tasa_personales_tna": "2026-04-16",
+    "tasa_adelantos_tna": "2026-04-16",
+    "tasa_politica_tna": "2025-07-10",
+    "tasa_politica_tea": "2025-07-10",
+    "pases_pasivos": "2026-04-16",
+    "leliq_notaliq": "2026-04-16",
+    "lefi_entidades": "2026-04-16"
+  }
 }
