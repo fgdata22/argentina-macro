@@ -1,0 +1,40 @@
+name: Pipeline BCRA (diario)
+
+on:
+  schedule:
+    # Corre de lunes a viernes a las 13:00 UTC = 10:00 ARG (horario invierno)
+    # El BCRA publica los datos de tasas y reservas en la manana
+    - cron: '0 13 * * 1-5'
+  workflow_dispatch:   # permite correrlo manualmente desde la pestaña Actions
+
+jobs:
+  actualizar-datos:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # necesario para que el job pueda hacer git push
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'           # cachea dependencias para acelerar ejecuciones
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar pipeline BCRA
+        run: python scripts/bcra_pipeline.py
+
+      - name: Commitear y pushear CSVs actualizados
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/bcra_hechos.csv data/bcra_variables.csv data/bcra_last_update.json
+          # Solo hace commit si hubo cambios (evita commits vacios en feriados)
+          git diff --cached --quiet || git commit -m "BCRA: actualizacion automatica $(date -u +%Y-%m-%d)"
+          git push
