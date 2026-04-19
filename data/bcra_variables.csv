@@ -1,0 +1,52 @@
+id_variable,nombre,categoria,unidad
+74,Reservas - saldo total,RESERVAS,millones USD
+75,"Reservas - oro, divisas y colocaciones",RESERVAS,millones USD
+76,Reservas - pase pasivo USD exterior,RESERVAS,millones USD
+77,Reservas - variacion diaria total,RESERVAS,millones USD
+78,Reservas - variacion compra divisas,RESERVAS,millones USD
+79,Reservas - variacion organismos internac,RESERVAS,millones USD
+80,Reservas - variacion otras op sector pub,RESERVAS,millones USD
+81,Reservas - variacion efectivo minimo,RESERVAS,millones USD
+82,Reservas - variacion otros,RESERVAS,millones USD
+83,DEGs 2009 - saldo asignaciones,RESERVAS,millones USD
+84,Tipo de cambio BCRA (pesos por USD),RESERVAS,pesos/USD
+46,BM - factores explicacion variacion,BASE MONETARIA,millones $
+49,BM - adelantos transitorios al Tesoro,BASE MONETARIA,millones $
+50,BM - transferencia utilidades al Tesoro,BASE MONETARIA,millones $
+64,BM - variacion diaria base monetaria,BASE MONETARIA,millones $
+67,BM - saldo billetes y monedas publico,BASE MONETARIA,millones $
+68,BM - saldo billetes y monedas entidades,BASE MONETARIA,millones $
+70,BM - saldo cuentas corrientes en BCRA,BASE MONETARIA,millones $
+71,BM - saldo base monetaria,BASE MONETARIA,millones $
+73,BM - saldo base mas cuasimonedas,BASE MONETARIA,millones $
+109,M2 - agregado monetario amplio,BASE MONETARIA,millones $
+197,M2 - transaccional privado,BASE MONETARIA,millones $
+94,Depositos - CC sector privado,DEPOSITOS,millones $
+95,Depositos - CA sector privado,DEPOSITOS,millones $
+96,Depositos - PF no ajustable priv,DEPOSITOS,millones $
+97,Depositos - PF ajustable CER/UVA priv,DEPOSITOS,millones $
+102,Depositos - total pesos sector privado,DEPOSITOS,millones $
+104,Depositos - USD privado en pesos,DEPOSITOS,millones $
+106,Depositos - total pesos y USD priv en $,DEPOSITOS,millones $
+108,Depositos - USD sector privado en USD,DEPOSITOS,millones USD
+110,Prestamos - adelantos CC pesos,PRESTAMOS,millones $
+111,Prestamos - documentos pesos,PRESTAMOS,millones $
+112,Prestamos - hipotecarios pesos,PRESTAMOS,millones $
+113,Prestamos - prendarios pesos,PRESTAMOS,millones $
+114,Prestamos - personales pesos,PRESTAMOS,millones $
+115,Prestamos - tarjetas credito pesos,PRESTAMOS,millones $
+116,Prestamos - otros pesos,PRESTAMOS,millones $
+117,Prestamos - total pesos,PRESTAMOS,millones $
+125,Prestamos - total USD en USD,PRESTAMOS,millones USD
+127,Prestamos - total pesos y USD en pesos,PRESTAMOS,millones $
+1189,PF - tasa total general TNA,TASAS,%
+1190,PF - tasa personas humanas TNA,TASAS,%
+138,BADLAR - total bancos TNA,TASAS,%
+139,BADLAR - bancos privados TNA,TASAS,%
+144,Tasa prestamos personales TNA,TASAS,%
+145,Tasa adelantos empresas TNA,TASAS,%
+160,Tasa politica monetaria TNA,TASAS,%
+161,Tasa politica monetaria TEA,TASAS,%
+152,Pases pasivos - saldo total,INSTRUMENTOS,millones $
+155,LELIQ y NOTALIQ - saldo,INSTRUMENTOS,millones $
+196,LEFI - cartera entidades,INSTRUMENTOS,millones $
