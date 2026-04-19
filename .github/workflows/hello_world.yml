@@ -1,0 +1,14 @@
+name: Hello World (test)
+
+on:
+  schedule:
+    - cron: '0 12 * * *'   # todos los días a las 12:00 UTC (09:00 Argentina)
+  workflow_dispatch:         # también permite correrlo manualmente con un botón
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Decir hola
+        run: echo "¡Pipeline funcionando! Fecha = $(date)"
