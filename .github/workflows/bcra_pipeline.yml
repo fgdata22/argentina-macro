@@ -34,7 +34,30 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/bcra_hechos.csv data/bcra_variables.csv data/bcra_last_update.json
+          git add data/bcra_hechos.csv data/bcra_columnas.csv data/bcra_last_update.json
           # Solo hace commit si hubo cambios (evita commits vacios en feriados)
           git diff --cached --quiet || git commit -m "BCRA: actualizacion automatica $(date -u +%Y-%m-%d)"
           git push
+
+      - name: Alertar si hay columnas nuevas detectadas
+        # Corre DESPUES del commit para que los datos siempre se actualicen.
+        # Si hay columnas nuevas, falla aqui -> GitHub envia email automaticamente.
+        run: |
+          python - <<'EOF'
+          import json, sys
+          with open("data/bcra_last_update.json") as f:
+              data = json.load(f)
+          nuevas = data.get("columnas_nuevas_detectadas", {})
+          total = sum(len(v) for v in nuevas.values())
+          if total > 0:
+              print("=" * 60)
+              print(f"ATENCION: el BCRA agrego {total} columna(s) nueva(s) al XLSM")
+              print("Estas columnas NO estan en el pipeline ni en Power BI:")
+              for hoja, cols in nuevas.items():
+                  if cols:
+                      print(f"  Hoja '{hoja}': columnas {sorted(cols)}")
+              print("Accion requerida: revisar si alguna es relevante y")
+              print("pedirle a Claude que la agregue a COLUMNAS en bcra_pipeline.py")
+              print("=" * 60)
+              sys.exit(1)
+          EOF
