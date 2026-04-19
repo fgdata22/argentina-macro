@@ -1,0 +1,13 @@
+{
+  "pipeline": "indec_emae",
+  "ultima_actualizacion": "2026-04-19T22:54:20.219834+00:00",
+  "total_filas": 265,
+  "total_columnas": 19,
+  "fecha_inicio": "2004-01-01",
+  "fecha_fin": "2026-01-01",
+  "fuentes": {
+    "mensual": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_emae_mensual_base2004.xls",
+    "actividad": "https://www.indec.gob.ar/ftp/cuadros/economia/sh_emae_actividad_base2004.xls"
+  },
+  "errores": []
+}

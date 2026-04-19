@@ -1,0 +1,47 @@
+name: Pipeline INDEC (mensual)
+
+on:
+  schedule:
+    # Corre el día 20 de cada mes a las 14:00 UTC = 11:00 ARG.
+    # El INDEC publica IPC y EMAE típicamente entre el día 15 y el 25.
+    # Si INDEC publica antes del 20, correr manualmente desde la pestaña Actions.
+    - cron: '0 14 20 * *'
+  workflow_dispatch:   # permite correrlo manualmente en cualquier momento
+
+jobs:
+  actualizar-datos:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar pipeline EMAE
+        run: python scripts/indec_emae_pipeline.py
+
+      - name: Ejecutar pipeline IPC
+        run: python scripts/indec_ipc_pipeline.py
+
+      - name: Commitear y pushear CSVs actualizados
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/indec_emae_hechos.csv \
+                  data/indec_ipc_hechos.csv \
+                  data/indec_emae_last_update.json \
+                  data/indec_ipc_last_update.json
+          # Solo hace commit si hubo cambios
+          git diff --cached --quiet || git commit -m "INDEC: actualizacion automatica $(date -u +%Y-%m)"
+          git push
