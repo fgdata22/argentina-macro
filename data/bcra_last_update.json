@@ -1,5 +1,5 @@
 {
-  "pipeline_ejecutado_utc": "2026-04-19T15:19:25Z",
+  "pipeline_ejecutado_utc": "2026-04-20T16:46:02Z",
   "total_fechas": 5829,
   "primera_fecha": "2002-12-31",
   "ultima_fecha_global": "2026-04-16",
@@ -45,5 +45,89 @@
     "pases_pasivos": "2026-04-16",
     "leliq_notaliq": "2026-04-16",
     "lefi_entidades": "2026-04-16"
+  },
+  "columnas_nuevas_detectadas": {
+    "BASE MONETARIA": [
+      "AB",
+      "AE",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X"
+    ],
+    "DEPOSITOS": [
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "T",
+      "W",
+      "Z"
+    ],
+    "RESERVAS": [
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L"
+    ],
+    "TASAS DE MERCADO": [
+      "F",
+      "T",
+      "U",
+      "V",
+      "W"
+    ],
+    "PRESTAMOS": [
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "S"
+    ],
+    "INSTRUMENTOS DEL BCRA": [
+      "AB",
+      "AC",
+      "AE",
+      "AF",
+      "AG",
+      "G",
+      "I",
+      "Q",
+      "R",
+      "S",
+      "V",
+      "Y"
+    ]
   }
 }
