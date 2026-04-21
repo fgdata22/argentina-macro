@@ -1,0 +1,68 @@
+{
+  "pipeline": "datos_gob_empleo",
+  "ultima_actualizacion": "2026-04-21T00:55:40.840093+00:00",
+  "total_filas": 92,
+  "total_columnas": 9,
+  "fecha_inicio": "2003-01-01",
+  "fecha_fin": "2025-10-01",
+  "fuente": "API Series de Tiempo - datos.gob.ar (EPH/INDEC + SIPA)",
+  "periodicidad": "trimestral",
+  "nota": "Fecha = primer mes del trimestre (ej. 2024-10-01 = Q4-2024)",
+  "series_config": [
+    {
+      "id": "42.3_EPH_PUNTUATAL_0_M_30",
+      "columna": "eph_tasa_desocupacion",
+      "descripcion": "EPH - Tasa de desocupacion total (% PEA)",
+      "unidad": "Porcentaje"
+    },
+    {
+      "id": "42.3_EPH_PUNTUATAL_0_M_24",
+      "columna": "eph_tasa_empleo",
+      "descripcion": "EPH - Tasa de empleo total (% poblacion)",
+      "unidad": "Porcentaje"
+    },
+    {
+      "id": "43.2_ECTAT_0_T_33",
+      "columna": "eph_tasa_actividad",
+      "descripcion": "EPH - Tasa de actividad total (% poblacion)",
+      "unidad": "Porcentaje"
+    },
+    {
+      "id": "155.1_TLTAL_C_0_0_5",
+      "columna": "sipa_empleo_priv_total",
+      "descripcion": "SIPA - Empleo registrado privado total",
+      "unidad": "Puestos"
+    },
+    {
+      "id": "155.1_ISTRIARIA_C_0_0_9",
+      "columna": "sipa_empleo_industria",
+      "descripcion": "SIPA - Empleo registrado privado industria",
+      "unidad": "Puestos"
+    },
+    {
+      "id": "155.1_CRCIOCIO_C_0_0_8",
+      "columna": "sipa_empleo_comercio",
+      "descripcion": "SIPA - Empleo registrado privado comercio",
+      "unidad": "Puestos"
+    },
+    {
+      "id": "155.1_CTRUCCIION_C_0_0_12",
+      "columna": "sipa_empleo_construccion",
+      "descripcion": "SIPA - Empleo registrado privado construccion",
+      "unidad": "Puestos"
+    },
+    {
+      "id": "155.1_SICIOSIOS_C_0_0_9",
+      "columna": "sipa_empleo_servicios",
+      "descripcion": "SIPA - Empleo registrado privado servicios",
+      "unidad": "Puestos"
+    },
+    {
+      "id": "155.1_MRIA_PELEO_C_0_0_16",
+      "columna": "sipa_empleo_mineria",
+      "descripcion": "SIPA - Empleo registrado privado mineria y petroleo",
+      "unidad": "Puestos"
+    }
+  ],
+  "errores": []
+}

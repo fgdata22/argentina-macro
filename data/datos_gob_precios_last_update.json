@@ -1,0 +1,24 @@
+{
+  "pipeline": "datos_gob_precios",
+  "ultima_actualizacion": "2026-04-21T00:55:17.171889+00:00",
+  "total_filas": 123,
+  "total_columnas": 2,
+  "fecha_inicio": "2016-01-01",
+  "fecha_fin": "2026-03-01",
+  "fuente": "API Series de Tiempo - datos.gob.ar (SIPM/INDEC)",
+  "series_config": [
+    {
+      "id": "448.1_NIVEL_GENERAL_0_0_13_46",
+      "columna": "ipim_nivel_general",
+      "descripcion": "IPIM - Nivel general (base Dic-2015=100)",
+      "unidad": "Índice"
+    },
+    {
+      "id": "450.1_NIVEL_GENERAL_0_0_13_92",
+      "columna": "ipib_nivel_general",
+      "descripcion": "IPIB - Nivel general (base Dic-2015=100)",
+      "unidad": "Índice"
+    }
+  ],
+  "errores": []
+}

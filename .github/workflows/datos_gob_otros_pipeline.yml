@@ -1,0 +1,51 @@
+name: Pipeline datos.gob.ar - Precios, Comercio y Empleo (mensual)
+
+on:
+  schedule:
+    # Corre el día 24 de cada mes a las 14:00 UTC = 11:00 ARG.
+    # IPIM e ICA se publican entre el 20 y el 25; EPH/SIPA trimestral
+    # (meses sin dato nuevo no fallan: la API simplemente devuelve el mismo ultimo valor).
+    - cron: '0 14 24 * *'
+  workflow_dispatch:
+
+jobs:
+  actualizar-datos:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar pipeline precios mayoristas (IPIM/IPIB)
+        run: python scripts/datos_gob_precios_pipeline.py
+
+      - name: Ejecutar pipeline comercio exterior (ICA)
+        run: python scripts/datos_gob_comercio_pipeline.py
+
+      - name: Ejecutar pipeline empleo (EPH + SIPA)
+        run: python scripts/datos_gob_empleo_pipeline.py
+
+      - name: Commitear y pushear CSVs actualizados
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/datos_gob_precios_hechos.csv \
+                  data/datos_gob_precios_last_update.json \
+                  data/datos_gob_comercio_hechos.csv \
+                  data/datos_gob_comercio_last_update.json \
+                  data/datos_gob_empleo_hechos.csv \
+                  data/datos_gob_empleo_last_update.json
+          git diff --cached --quiet || git commit -m "datos.gob.ar: actualizacion automatica precios+comercio+empleo $(date -u +%Y-%m)"
+          git push

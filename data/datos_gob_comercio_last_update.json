@@ -1,0 +1,96 @@
+{
+  "pipeline": "datos_gob_comercio",
+  "ultima_actualizacion": "2026-04-21T00:55:31.729742+00:00",
+  "total_filas": 278,
+  "total_columnas": 14,
+  "fecha_inicio": "2003-01-01",
+  "fecha_fin": "2026-02-01",
+  "fuente": "API Series de Tiempo - datos.gob.ar (ICA/INDEC)",
+  "series_config": [
+    {
+      "id": "74.3_IET_0_M_16",
+      "columna": "ica_expo_total",
+      "descripcion": "Exportaciones totales",
+      "unidad": "Millones USD"
+    },
+    {
+      "id": "74.3_IIT_0_M_25",
+      "columna": "ica_impo_total",
+      "descripcion": "Importaciones totales",
+      "unidad": "Millones USD"
+    },
+    {
+      "id": "74.3_ISC_0_M_19",
+      "columna": "ica_saldo",
+      "descripcion": "Saldo comercial (expo - impo)",
+      "unidad": "Millones USD"
+    },
+    {
+      "id": "74.3_IEPP_0_M_35",
+      "columna": "ica_expo_pp",
+      "descripcion": "Exportaciones - Productos primarios (PP)",
+      "unidad": "Millones USD"
+    },
+    {
+      "id": "74.3_IEMOA_0_M_48",
+      "columna": "ica_expo_moa",
+      "descripcion": "Exportaciones - Manuf. de origen agropecuario (MOA)",
+      "unidad": "Millones USD"
+    },
+    {
+      "id": "74.3_IEMOI_0_M_46",
+      "columna": "ica_expo_moi",
+      "descripcion": "Exportaciones - Manuf. de origen industrial (MOI)",
+      "unidad": "Millones USD"
+    },
+    {
+      "id": "74.3_IECE_0_M_35",
+      "columna": "ica_expo_ce",
+      "descripcion": "Exportaciones - Combustibles y energia (C&E)",
+      "unidad": "Millones USD"
+    },
+    {
+      "id": "74.3_IIBCA_0_M_32",
+      "columna": "ica_impo_bk",
+      "descripcion": "Importaciones - Bienes de capital (BK)",
+      "unidad": "Millones USD"
+    },
+    {
+      "id": "74.3_IIBI_0_M_36",
+      "columna": "ica_impo_bi",
+      "descripcion": "Importaciones - Bienes intermedios (BI)",
+      "unidad": "Millones USD"
+    },
+    {
+      "id": "74.3_IICL_0_M_42",
+      "columna": "ica_impo_cyl",
+      "descripcion": "Importaciones - Combustibles y lubricantes (CyL)",
+      "unidad": "Millones USD"
+    },
+    {
+      "id": "74.3_IIPABC_0_M_50",
+      "columna": "ica_impo_piezas",
+      "descripcion": "Importaciones - Piezas y accesorios de BK",
+      "unidad": "Millones USD"
+    },
+    {
+      "id": "74.3_IIBCO_0_M_32",
+      "columna": "ica_impo_bc",
+      "descripcion": "Importaciones - Bienes de consumo (BC)",
+      "unidad": "Millones USD"
+    },
+    {
+      "id": "74.3_IIVAP_0_M_49",
+      "columna": "ica_impo_vehic",
+      "descripcion": "Importaciones - Vehiculos automotores pasajeros",
+      "unidad": "Millones USD"
+    },
+    {
+      "id": "74.3_IIR_0_M_23",
+      "columna": "ica_impo_resto",
+      "descripcion": "Importaciones - Resto",
+      "unidad": "Millones USD"
+    }
+  ],
+  "errores": []
+}
