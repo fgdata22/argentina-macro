@@ -115,12 +115,46 @@ COLUMNAS = [
     ("INSTRUMENTOS DEL BCRA", "B",  "pases_pasivos",      "Pases pasivos - saldo total",        "millones $",   ["pases", "pasivos"]),
     ("INSTRUMENTOS DEL BCRA", "F",  "leliq_notaliq",      "LELIQ y NOTALIQ - saldo",            "millones $",   ["leliq", "notaliq"]),
     ("INSTRUMENTOS DEL BCRA", "AV", "lefi_entidades",     "LEFI - cartera entidades",           "millones $",   ["lefi", "letras", "fiscales"]),
+    ("INSTRUMENTOS DEL BCRA", "I",  "bopreal_lediv",      "BOPREAL / LEDIV - stock en USD",     "millones USD", ["dolares", "lediv", "bopreal"]),
+    # Agregadas 2026-04-20 tras deteccion de columnas nuevas (BCRA agrego series)
+    ("BASE MONETARIA",    "O",  "factor_bm_lefi",     "Factor explicacion BM - operaciones LEFI", "millones $",   ["lefi"]),
+    ("TASAS DE MERCADO",  "T",  "call_baibar_tna",    "Tasa call BAIBAR entre bancos privados TNA", "%",         ["call", "baibar"]),
+    ("TASAS DE MERCADO",  "F",  "tasa_pf_usd_tna",    "Tasa PF total general en USD TNA",         "%",            ["general", "dolares"]),
+    ("PRESTAMOS",         "S",  "prest_usd_enpesos",  "Prestamos - total USD al privado en pesos", "millones $",  ["dolares", "privado"]),
 ]
 
 # Columnas que ya estamos trackeando, por hoja (para detectar nuevas)
 COLUMNAS_TRACKEADAS = {
     hoja: {col.strip() for (h, col, *_) in COLUMNAS if h == hoja}
     for hoja in {c[0] for c in COLUMNAS}
+}
+
+# Columnas que analizamos y DESCARTAMOS DELIBERADAMENTE.
+# El guard las ignora y no las reporta como "nuevas". Si el BCRA agrega algo
+# que NO este ni en COLUMNAS ni aqui, el guard falla y nos notifica.
+# Ultima revision manual: 2026-04-20.
+COLUMNAS_IGNORADAS_CONSCIENTEMENTE = {
+    # Factores de explicacion de la BM - todos excepto LEFI (que ya esta en COLUMNAS)
+    # Bloque C-P: compras de divisas, tesoro, adelantos, pases, leliq, redescuentos,
+    # intereses, lebac, rescate cuasimonedas, otros. Util a futuro como modulo aparte.
+    # Bloque R-X: saldos BM con metodologia alternativa, duplica Z-AF que ya trackeamos.
+    # AB, AE: sub-items de los bloques duplicados.
+    "BASE MONETARIA": {"C","D","E","F","G","H","I","J","K","L","M","N","P",
+                        "R","S","T","U","V","W","X","AB","AE"},
+    # Bloque B-J, O-R: totales del sistema (privado+publico). El dashboard se enfoca
+    # en privado, que ya esta trackeado. T, W, Z: totales agregados redundantes.
+    "DEPOSITOS": {"B","C","D","E","F","G","H","I","J","O","P","Q","R","T","W","Z"},
+    # Factores de explicacion de reservas (compra divisas, organismos intl, efectivo
+    # minimo). Paralelo a los factores de BM - deferido a modulo aparte.
+    "RESERVAS": {"G","H","I","J","K","L"},
+    # Montos operados (granular) y variantes secundarias de tasas.
+    "TASAS DE MERCADO": {"U","V","W"},
+    # Desglose de prestamos en USD por tipo (adelantos, documentos, etc.).
+    # Ya trackeamos el total (prest_usd_enpesos en col S).
+    "PRESTAMOS": {"J","K","L","M","N","O","P"},
+    # Desglose LEBAC por plazo (1m, 2m, 3m, 6m, 9m, 12m, 18m) y variantes CER.
+    # Granularidad innecesaria para el dashboard macro.
+    "INSTRUMENTOS DEL BCRA": {"G","Q","R","S","V","Y","AB","AC","AE","AF","AG"},
 }
 
 # Hojas de datos (excluir hojas de metadata)
@@ -217,6 +251,7 @@ def detectar_columnas_nuevas(wb, fila_inicio_cache: dict) -> dict:
             continue
 
         trackeadas = COLUMNAS_TRACKEADAS.get(hoja, set())
+        ignoradas  = COLUMNAS_IGNORADAS_CONSCIENTEMENTE.get(hoja, set())
         columnas_con_datos = set()
 
         # Escanear solo las primeras 200 filas de datos para eficiencia
@@ -227,7 +262,7 @@ def detectar_columnas_nuevas(wb, fila_inicio_cache: dict) -> dict:
                 if isinstance(valor, (int, float)):
                     columnas_con_datos.add(get_column_letter(idx))
 
-        nuevas_en_hoja = columnas_con_datos - trackeadas
+        nuevas_en_hoja = columnas_con_datos - trackeadas - ignoradas
         if nuevas_en_hoja:
             nuevas[hoja] = sorted(nuevas_en_hoja)
 
