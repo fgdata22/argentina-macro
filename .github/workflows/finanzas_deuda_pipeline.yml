@@ -1,0 +1,41 @@
+name: Pipeline Finanzas Deuda (mensual)
+
+on:
+  schedule:
+    # Corre el día 28 de cada mes a las 14:00 UTC = 11:00 ARG.
+    # Finanzas publica con ~45-60 dias de lag: el dato de enero sale a fines de marzo.
+    # Si publicaron antes del 28, correr manualmente desde la pestaña Actions.
+    - cron: '0 14 28 * *'
+  workflow_dispatch:
+
+jobs:
+  actualizar-datos:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar pipeline deuda pública (Finanzas)
+        run: python scripts/finanzas_deuda_pipeline.py
+
+      - name: Commitear y pushear CSV actualizado
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/finanzas_deuda_hechos.csv \
+                  data/finanzas_deuda_last_update.json
+          git diff --cached --quiet || git commit -m "Finanzas: actualizacion automatica deuda $(date -u +%Y-%m)"
+          git push

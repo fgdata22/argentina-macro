@@ -1,0 +1,127 @@
+{
+  "pipeline": "finanzas_deuda",
+  "ultima_actualizacion": "2026-04-21T01:06:05.597611+00:00",
+  "total_filas": 84,
+  "total_columnas": 19,
+  "fecha_inicio": "2019-01-01",
+  "fecha_fin": "2025-12-01",
+  "fuente": "https://www.argentina.gob.ar/sites/default/files/boletin_mensual_31_03_2026_1.xlsx",
+  "nota_cobertura": "Serie desde 2019-01. Lag de publicacion: ~45-60 dias.",
+  "series_config": [
+    {
+      "hoja": "A.1",
+      "fila_esperada": 10,
+      "columna": "deuda_bruta_total",
+      "descripcion": "Deuda bruta total Adm. Central (mill USD)"
+    },
+    {
+      "hoja": "A.1",
+      "fila_esperada": 15,
+      "columna": "deuda_pago_normal",
+      "descripcion": "Deuda en situacion de pago normal (mill USD)"
+    },
+    {
+      "hoja": "A.1",
+      "fila_esperada": 19,
+      "columna": "deuda_titulos_mlp",
+      "descripcion": "Titulos publicos mediano/largo plazo (mill USD)"
+    },
+    {
+      "hoja": "A.1",
+      "fila_esperada": 83,
+      "columna": "deuda_letras_mlp",
+      "descripcion": "Letras del Tesoro mediano/largo plazo (mill USD)"
+    },
+    {
+      "hoja": "A.1",
+      "fila_esperada": 95,
+      "columna": "deuda_prestamos_mlp",
+      "descripcion": "Prestamos mediano/largo plazo (mill USD)"
+    },
+    {
+      "hoja": "A.1",
+      "fila_esperada": 99,
+      "columna": "deuda_org_int",
+      "descripcion": "Prestamos de organismos internacionales (mill USD)"
+    },
+    {
+      "hoja": "A.1",
+      "fila_esperada": 107,
+      "columna": "deuda_fmi",
+      "descripcion": "Deuda con el FMI (mill USD)"
+    },
+    {
+      "hoja": "A.1",
+      "fila_esperada": 110,
+      "columna": "deuda_bilaterales",
+      "descripcion": "Deuda bilateral (Club Paris + otros, mill USD)"
+    },
+    {
+      "hoja": "A.1",
+      "fila_esperada": 123,
+      "columna": "deuda_adelantos_ext",
+      "descripcion": "Adelantos transitorios BCRA extraordinarios (mill USD)"
+    },
+    {
+      "hoja": "A.1",
+      "fila_esperada": 127,
+      "columna": "deuda_adelantos_ord",
+      "descripcion": "Adelantos transitorios BCRA ordinarios (mill USD)"
+    },
+    {
+      "hoja": "A.1",
+      "fila_esperada": 136,
+      "columna": "deuda_titulos_cp",
+      "descripcion": "Titulos publicos corto plazo (mill USD)"
+    },
+    {
+      "hoja": "A.1",
+      "fila_esperada": 138,
+      "columna": "deuda_letras_cp",
+      "descripcion": "Letras del Tesoro corto plazo (mill USD)"
+    },
+    {
+      "hoja": "A.1",
+      "fila_esperada": 155,
+      "columna": "deuda_diferido",
+      "descripcion": "Deuda en situacion de pago diferido (mill USD)"
+    },
+    {
+      "hoja": "A.1",
+      "fila_esperada": 160,
+      "columna": "deuda_reestructuracion",
+      "descripcion": "Deuda elegible pendiente de reestructuracion (mill USD)"
+    },
+    {
+      "hoja": "A.3",
+      "fila_esperada": 54,
+      "columna": "deuda_pesos_no_cer",
+      "descripcion": "Deuda en pesos no ajustable por CER (mill USD)"
+    },
+    {
+      "hoja": "A.3",
+      "fila_esperada": 55,
+      "columna": "deuda_pesos_cer",
+      "descripcion": "Deuda en pesos ajustable por CER (mill USD)"
+    },
+    {
+      "hoja": "A.3",
+      "fila_esperada": 56,
+      "columna": "deuda_usd",
+      "descripcion": "Deuda en dolares (mill USD)"
+    },
+    {
+      "hoja": "A.3",
+      "fila_esperada": 57,
+      "columna": "deuda_eur",
+      "descripcion": "Deuda en euros (mill USD)"
+    },
+    {
+      "hoja": "A.3",
+      "fila_esperada": 59,
+      "columna": "deuda_deg",
+      "descripcion": "Deuda en DEG (FMI, mill USD)"
+    }
+  ],
+  "errores": []
+}
