@@ -1,47 +1,47 @@
 columna,descripcion,unidad,ultima_fecha
-res_total,Reservas internacionales - saldo total,millones USD,2026-04-16
-res_oro_divisas,"Reservas - oro, divisas y colocaciones",millones USD,2026-04-16
-res_pase_pasivo,Reservas - pase pasivo USD exterior,millones USD,2026-04-16
-res_degs,DEGs 2009 - saldo asignaciones,millones USD,2026-04-16
-tc_bcra,Tipo de cambio BCRA (pesos por USD),pesos/USD,2026-04-16
-bm_billetes_publico,BM - saldo billetes y monedas publico,millones $,2026-04-16
-bm_billetes_entidades,BM - saldo billetes y monedas entidades,millones $,2026-04-16
-bm_cta_cte_bcra,BM - saldo cuentas corrientes en BCRA,millones $,2026-04-16
-bm_saldo,BM - saldo base monetaria,millones $,2026-04-16
-bm_mas_cuasimonedas,BM - saldo base mas cuasimonedas,millones $,2026-04-16
-m2,M2 - agregado monetario amplio,millones $,2026-04-16
-m2_transaccional_priv,M2 - transaccional privado,millones $,2026-04-16
-dep_cc_priv,Depositos - CC sector privado,millones $,2026-04-16
-dep_ca_priv,Depositos - CA sector privado,millones $,2026-04-16
-dep_pf_no_ajust_priv,Depositos - PF no ajustable privado,millones $,2026-04-16
-dep_pf_ajust_cer_priv,Depositos - PF ajustable CER/UVA privado,millones $,2026-04-16
-dep_total_pesos_priv,Depositos - total pesos sector privado,millones $,2026-04-16
-dep_usd_priv_enpesos,Depositos - USD privado en pesos,millones $,2026-04-16
-dep_total_priv_enpesos,Depositos - total pesos y USD privado en $,millones $,2026-04-16
-dep_usd_priv,Depositos - USD sector privado en USD,millones USD,2026-04-16
-prest_adelantos,Prestamos - adelantos CC pesos,millones $,2026-04-16
-prest_documentos,Prestamos - documentos pesos,millones $,2026-04-16
-prest_hipotecarios,Prestamos - hipotecarios pesos,millones $,2026-04-16
-prest_prendarios,Prestamos - prendarios pesos,millones $,2026-04-16
-prest_personales,Prestamos - personales pesos,millones $,2026-04-16
-prest_tarjetas,Prestamos - tarjetas credito pesos,millones $,2026-04-16
-prest_otros,Prestamos - otros pesos,millones $,2026-04-16
-prest_total_pesos,Prestamos - total pesos,millones $,2026-04-16
-prest_total_usd,Prestamos - total USD en USD,millones USD,2026-04-16
-prest_total_enpesos,Prestamos - total pesos y USD en pesos,millones $,2026-04-16
-tasa_pf_total_tna,Tasa PF total general TNA,%,2026-04-20
-tasa_pf_personas_tna,Tasa PF personas humanas TNA,%,2026-04-20
-badlar_total_tna,BADLAR total bancos TNA,%,2026-04-20
-badlar_privados_tna,BADLAR bancos privados TNA,%,2026-04-20
-tasa_personales_tna,Tasa prestamos personales TNA,%,2026-04-20
-tasa_adelantos_tna,Tasa adelantos empresas TNA,%,2026-04-20
+res_total,Reservas internacionales - saldo total,millones USD,2026-04-17
+res_oro_divisas,"Reservas - oro, divisas y colocaciones",millones USD,2026-04-17
+res_pase_pasivo,Reservas - pase pasivo USD exterior,millones USD,2026-04-17
+res_degs,DEGs 2009 - saldo asignaciones,millones USD,2026-04-17
+tc_bcra,Tipo de cambio BCRA (pesos por USD),pesos/USD,2026-04-17
+bm_billetes_publico,BM - saldo billetes y monedas publico,millones $,2026-04-17
+bm_billetes_entidades,BM - saldo billetes y monedas entidades,millones $,2026-04-17
+bm_cta_cte_bcra,BM - saldo cuentas corrientes en BCRA,millones $,2026-04-17
+bm_saldo,BM - saldo base monetaria,millones $,2026-04-17
+bm_mas_cuasimonedas,BM - saldo base mas cuasimonedas,millones $,2026-04-17
+m2,M2 - agregado monetario amplio,millones $,2026-04-17
+m2_transaccional_priv,M2 - transaccional privado,millones $,2026-04-17
+dep_cc_priv,Depositos - CC sector privado,millones $,2026-04-17
+dep_ca_priv,Depositos - CA sector privado,millones $,2026-04-17
+dep_pf_no_ajust_priv,Depositos - PF no ajustable privado,millones $,2026-04-17
+dep_pf_ajust_cer_priv,Depositos - PF ajustable CER/UVA privado,millones $,2026-04-17
+dep_total_pesos_priv,Depositos - total pesos sector privado,millones $,2026-04-17
+dep_usd_priv_enpesos,Depositos - USD privado en pesos,millones $,2026-04-17
+dep_total_priv_enpesos,Depositos - total pesos y USD privado en $,millones $,2026-04-17
+dep_usd_priv,Depositos - USD sector privado en USD,millones USD,2026-04-17
+prest_adelantos,Prestamos - adelantos CC pesos,millones $,2026-04-17
+prest_documentos,Prestamos - documentos pesos,millones $,2026-04-17
+prest_hipotecarios,Prestamos - hipotecarios pesos,millones $,2026-04-17
+prest_prendarios,Prestamos - prendarios pesos,millones $,2026-04-17
+prest_personales,Prestamos - personales pesos,millones $,2026-04-17
+prest_tarjetas,Prestamos - tarjetas credito pesos,millones $,2026-04-17
+prest_otros,Prestamos - otros pesos,millones $,2026-04-17
+prest_total_pesos,Prestamos - total pesos,millones $,2026-04-17
+prest_total_usd,Prestamos - total USD en USD,millones USD,2026-04-17
+prest_total_enpesos,Prestamos - total pesos y USD en pesos,millones $,2026-04-17
+tasa_pf_total_tna,Tasa PF total general TNA,%,2026-04-21
+tasa_pf_personas_tna,Tasa PF personas humanas TNA,%,2026-04-21
+badlar_total_tna,BADLAR total bancos TNA,%,2026-04-21
+badlar_privados_tna,BADLAR bancos privados TNA,%,2026-04-21
+tasa_personales_tna,Tasa prestamos personales TNA,%,2026-04-21
+tasa_adelantos_tna,Tasa adelantos empresas TNA,%,2026-04-21
 tasa_politica_tna,Tasa politica monetaria TNA,%,2025-07-10
 tasa_politica_tea,Tasa politica monetaria TEA,%,2025-07-10
-pases_pasivos,Pases pasivos - saldo total,millones $,2026-04-20
-leliq_notaliq,LELIQ y NOTALIQ - saldo,millones $,2026-04-20
-lefi_entidades,LEFI - cartera entidades,millones $,2026-04-20
-bopreal_lediv,BOPREAL / LEDIV - stock en USD,millones USD,2026-04-20
-factor_bm_lefi,Factor explicacion BM - operaciones LEFI,millones $,2026-04-16
-call_baibar_tna,Tasa call BAIBAR entre bancos privados TNA,%,2026-04-20
-tasa_pf_usd_tna,Tasa PF total general en USD TNA,%,2026-04-20
-prest_usd_enpesos,Prestamos - total USD al privado en pesos,millones $,2026-04-16
+pases_pasivos,Pases pasivos - saldo total,millones $,2026-04-21
+leliq_notaliq,LELIQ y NOTALIQ - saldo,millones $,2026-04-21
+lefi_entidades,LEFI - cartera entidades,millones $,2026-04-21
+bopreal_lediv,BOPREAL / LEDIV - stock en USD,millones USD,2026-04-21
+factor_bm_lefi,Factor explicacion BM - operaciones LEFI,millones $,2026-04-17
+call_baibar_tna,Tasa call BAIBAR entre bancos privados TNA,%,2026-04-21
+tasa_pf_usd_tna,Tasa PF total general en USD TNA,%,2026-04-21
+prest_usd_enpesos,Prestamos - total USD al privado en pesos,millones $,2026-04-17
