@@ -1,11 +1,11 @@
 {
   "pipeline": "finanzas_deuda",
-  "ultima_actualizacion": "2026-04-28T19:12:14.340696+00:00",
+  "ultima_actualizacion": "2026-05-28T21:33:30.694989+00:00",
   "total_filas": 84,
   "total_columnas": 19,
   "fecha_inicio": "2019-01-01",
   "fecha_fin": "2025-12-01",
-  "fuente": "https://www.argentina.gob.ar/sites/default/files/boletin_mensual_31_03_2026_1.xlsx",
+  "fuente": "https://www.argentina.gob.ar/sites/default/files/boletin_mensual_30_04_2026_1.xlsx",
   "nota_cobertura": "Serie desde 2019-01. Lag de publicacion: ~45-60 dias.",
   "series_config": [
     {
