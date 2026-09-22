@@ -1,10 +1,10 @@
 {
   "pipeline": "datos_gob_fiscal",
-  "ultima_actualizacion": "2026-08-22T14:18:15.520829+00:00",
-  "total_filas": 126,
+  "ultima_actualizacion": "2026-09-22T17:56:03.432178+00:00",
+  "total_filas": 128,
   "total_columnas": 21,
   "fecha_inicio": "2016-01-01",
-  "fecha_fin": "2026-06-01",
+  "fecha_fin": "2026-08-01",
   "fuente": "API Series de Tiempo - datos.gob.ar",
   "series_config": [
     {
