@@ -1,10 +1,10 @@
 {
   "pipeline": "datos_gob_comercio",
-  "ultima_actualizacion": "2026-08-24T14:47:16.553262+00:00",
-  "total_filas": 282,
+  "ultima_actualizacion": "2026-09-24T18:20:30.853885+00:00",
+  "total_filas": 284,
   "total_columnas": 14,
   "fecha_inicio": "2003-01-01",
-  "fecha_fin": "2026-06-01",
+  "fecha_fin": "2026-08-01",
   "fuente": "API Series de Tiempo - datos.gob.ar (ICA/INDEC)",
   "series_config": [
     {

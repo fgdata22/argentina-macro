@@ -1,10 +1,10 @@
 {
   "pipeline": "datos_gob_empleo",
-  "ultima_actualizacion": "2026-08-24T14:47:20.549376+00:00",
-  "total_filas": 93,
+  "ultima_actualizacion": "2026-09-24T18:20:35.478011+00:00",
+  "total_filas": 94,
   "total_columnas": 9,
   "fecha_inicio": "2003-01-01",
-  "fecha_fin": "2026-01-01",
+  "fecha_fin": "2026-04-01",
   "fuente": "API Series de Tiempo - datos.gob.ar (EPH/INDEC + SIPA)",
   "periodicidad": "trimestral",
   "nota": "Fecha = primer mes del trimestre (ej. 2024-10-01 = Q4-2024)",
