@@ -1,10 +1,10 @@
 {
   "pipeline": "indec_ipc",
-  "ultima_actualizacion": "2026-09-20T17:19:17.652255+00:00",
-  "total_filas": 117,
+  "ultima_actualizacion": "2026-10-20T18:22:11.160881+00:00",
+  "total_filas": 118,
   "total_columnas": 18,
   "fecha_inicio": "2016-12-01",
-  "fecha_fin": "2026-08-01",
+  "fecha_fin": "2026-09-01",
   "fuente": "https://www.indec.gob.ar/ftp/cuadros/economia/serie_ipc_divisiones.csv",
   "region": "Nacional",
   "errores": []
