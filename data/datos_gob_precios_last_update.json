@@ -1,10 +1,10 @@
 {
   "pipeline": "datos_gob_precios",
-  "ultima_actualizacion": "2026-09-24T18:20:23.804081+00:00",
-  "total_filas": 128,
+  "ultima_actualizacion": "2026-11-24T23:25:22.422064+00:00",
+  "total_filas": 129,
   "total_columnas": 2,
   "fecha_inicio": "2016-01-01",
-  "fecha_fin": "2026-08-01",
+  "fecha_fin": "2026-09-01",
   "fuente": "API Series de Tiempo - datos.gob.ar (SIPM/INDEC)",
   "series_config": [
     {
